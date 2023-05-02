@@ -15,7 +15,8 @@ export class Project{
     if (!initializer) return;
     if (initializer.id) this.id = initializer.id;
     if (initializer.name) this.name = initializer.name;
-    if (initializer.description) this.description = initializer.imageUrl;
+    if (initializer.description) this.description = initializer.description;
+    if (initializer.imageUrl) this.imageUrl = initializer.imageUrl;
     if (initializer.contractTypeId) this.contractTypeId = initializer.contractTypeId;
     if (initializer.contractSigneOn)
     this.contractSigneOn = new Date(initializer.contractSigneOn);
