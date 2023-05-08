@@ -6,24 +6,24 @@ interface ProjectListProps {
 }
 
 function ProjectList({ projects }: ProjectListProps) {
-  return ( 
+  return (
     <div className="row">
-      {projects.map(project=>(
-        <div className="card" key={project.id}>
-          <img src={project.imageUrl} alt={project.name}/>
-          
-          
-          {project.name}
-        
-        
+      {projects.map((project) => (
+        <div className="cols" key={project.id}>
+          <div className="card">
+            <img src={project.imageUrl} alt={project.name} />
+            <section className="section--dark">
+              <h5 className="section-strong">
+                <strong>{project.name}</strong>
+              </h5>
+              <p>{project.description}</p>
+              <p>Budjet: {project.budget} Kr</p>
+            </section>
+          </div>
         </div>
       ))}
-
     </div>
-      
-    
-
-  )
+  );
 }
 
 export default ProjectList;
