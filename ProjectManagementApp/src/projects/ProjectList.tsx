@@ -6,7 +6,24 @@ interface ProjectListProps {
 }
 
 function ProjectList({ projects }: ProjectListProps) {
-  return <pre>{JSON.stringify(projects, null, " ")}</pre>;
+  return ( 
+    <div className="row">
+      {projects.map(project=>(
+        <div className="card" key={project.id}>
+          <img src={project.imageUrl} alt={project.name}/>
+          
+          
+          {project.name}
+        
+        
+        </div>
+      ))}
+
+    </div>
+      
+    
+
+  )
 }
 
 export default ProjectList;
