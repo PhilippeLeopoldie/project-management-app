@@ -9,7 +9,7 @@ so far it looks like this (2023-05-10)
 
 this is the workflow (2023-05-10):
 
-![my workflow image](Worflow_Tree_2023_05_10.png)
+![my image](Worflow_Tree_2023_05_10.png)
 
 
 # technology
