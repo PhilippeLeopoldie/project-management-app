@@ -11,15 +11,16 @@ interface ProjectCardProps {
 }
 
 function ProjectCard(props:ProjectCardProps) {
+  const {project} = props;
   return (
     <div className="card">
-            <img src={props.project.imageUrl} alt={props.project.name} />
+            <img src={project.imageUrl} alt={project.name} />
             <section className="section--dark">
               <h5 className="section-strong">
-                <strong>{props.project.name}</strong>
+                <strong>{project.name}</strong>
               </h5>
-              <p>{formatDescription(props.project.description)}</p>
-              <p>Budjet: {props.project.budget} Kr</p>
+              <p>{formatDescription(project.description)}</p>
+              <p>Budjet: {project.budget} Kr</p>
             </section>
           </div>
   )
