@@ -5,7 +5,7 @@ in developpement...
 
 so far it looks like this (2023-05-10)
 
-![my image](project_2023_10_05.png)
+![my image](project_2023_12_05.png)
 
 this is the workflow (2023-05-10):
 
