@@ -1,1 +1,10 @@
 @import '../node_modules/mini.css/dist/mini-default.min.css';
+
+*{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+form{
+  min-width: 300px;
+}
+
