@@ -1,7 +1,12 @@
 # project-management-app
   this is an front-end project management lab
 
-in developpement...
+# technology
+- React
+- TypeScript
+
+
+# in developpement...
 
 so far it looks like this (2023-05-12)
 
@@ -13,7 +18,4 @@ this is the workflow (2023-05-12):
 
 
 
-# technology
-- React
-- TypeScript
 
