@@ -5,9 +5,10 @@ import ProjectForm from "./ProjectForm";
 
 interface ProjectListProps {
   projects: Project[];
+  onSave:(project: Project)=>void;
 }
 
-function ProjectList({ projects }: ProjectListProps) {
+function ProjectList({ projects, onSave }: ProjectListProps) {
   const [projectBeingEdited, setProjectBeingEdited] = useState<object>({});
 
   const handleEdit = (project: Project) => {
@@ -19,10 +20,12 @@ function ProjectList({ projects }: ProjectListProps) {
     setProjectBeingEdited({});
   };
 
+
+
   const items = projects.map((project) => (
     <div className="cols" key={project.id}>
       {project === projectBeingEdited ? (
-        <ProjectForm onCancel={cancelEditing} />
+        <ProjectForm onCancel={cancelEditing} onSave={onSave} />
       ) : (
         <ProjectCard project={project} onEdit={handleEdit} />
       )}
