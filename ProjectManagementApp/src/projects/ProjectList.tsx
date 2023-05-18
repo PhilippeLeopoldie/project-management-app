@@ -8,9 +8,16 @@ interface ProjectListProps {
 }
 
 function ProjectList({ projects }: ProjectListProps) {
+  const handleEdit=(project:Project) => {
+    console.log(project)
+
+  }
+
+  
+
   const items = projects.map(project => (
     <div className="cols" key={project.id}>
-      <ProjectCard project={project}/>
+      <ProjectCard project={project} onEdit={handleEdit}/>
       <ProjectForm/>
     </div>
   ))
