@@ -3,7 +3,7 @@ type ProjectInitializer ={
   name?:string;
   description?:string;
   imageUrl?: string;
-  contractTypeId:number;
+  contractTypeId?:number;
   contractSignedOn?:string;
   budget?:number;
   isActive?: boolean;
