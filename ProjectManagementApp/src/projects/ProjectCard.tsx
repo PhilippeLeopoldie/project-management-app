@@ -10,10 +10,8 @@ interface ProjectCardProps {
   onEdit: (project: Project) => void;
 }
 
-function ProjectCard({ project,onEdit }: ProjectCardProps) {
-  
-  const handleEditClick = (ProjectBeingEdited : Project) => {
-    
+function ProjectCard({ project, onEdit }: ProjectCardProps) {
+  const handleEditClick = (ProjectBeingEdited: Project) => {
     onEdit(ProjectBeingEdited);
   };
   return (
@@ -25,8 +23,7 @@ function ProjectCard({ project,onEdit }: ProjectCardProps) {
         </h5>
         <p>{formatDescription(project.description)}</p>
         <p>Budjet: {project.budget} Kr</p>
-        <button className="bordered" onClick={()=>
-        handleEditClick(project)}>
+        <button className="bordered" onClick={() => handleEditClick(project)}>
           <span className="icon-edit"></span>
           Edit
         </button>
