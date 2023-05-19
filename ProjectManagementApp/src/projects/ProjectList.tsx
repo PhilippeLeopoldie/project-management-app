@@ -13,7 +13,6 @@ function ProjectList({ projects, onSave }: ProjectListProps) {
 
   const handleEdit = (project: Project) => {
     setProjectBeingEdited(project);
-    console.log("my object: ", project);
   };
 
   const cancelEditing = () => {
