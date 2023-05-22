@@ -71,9 +71,13 @@ function Form() {
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         onBlur={(e) => setMessageTouched(true)}
-        
       />
+      <br/>
+      {messageError && messageTouched && (
+        <p className="alert">{messageError}</p>
+      )}
       
+
 
       <></>
     </form>
