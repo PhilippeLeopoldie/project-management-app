@@ -10,11 +10,9 @@
 
 so far it looks like this:
 
-  -deploying link:
+  [deploying link:](https://project-management-ym4t7k4dk-philippeleopoldie.vercel.app)
 
-    https://project-management-ym4t7k4dk-philippeleopoldie.vercel.app/
-
-this is the workflow (2023-05-12):
+here is the components tree:
 
 ![my image](Workflow_Tree_2023_05_12.png)
 
