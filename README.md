@@ -8,9 +8,11 @@
 
 # in developpement...
 
-so far it looks like this (2023-05-12)
+so far it looks like this:
 
-![my image](project_2023_12_05.png)
+  -deploying link:
+
+    project-management-nzguac54t-philippeleopoldie.vercel.app
 
 this is the workflow (2023-05-12):
 
