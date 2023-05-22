@@ -5,9 +5,7 @@ import ProjectsPage from "./projects/ProjectsPage";
 function App() {
   return (
     <div className="Container">
-      <Form/>
       <ProjectsPage />
-      
     </div>
   );
 }
