@@ -70,15 +70,25 @@ function Form() {
         name="message"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
-        onBlur={(e) => setMessageTouched(true)}
+        onBlur={() => setMessageTouched(true)}
       />
-      <br/>
+      <br />
       {messageError && messageTouched && (
         <p className="alert">{messageError}</p>
       )}
-      
-
-
+      <input
+        type="checkbox"
+        name="agreedToTerms"
+        onChange={(e) => e.target.value}
+        onBlur={() => setAgreedToTermsTouched(true)}
+      />
+      I agree to the terms and conditions.
+      <br />
+      {agreedToTermsError && agreedTotermsTouched && (
+        <p className="alert">{agreedToTermsError}</p>
+      )}
+      <button>Send</button>
+      <pre>{stateToString()}</pre>
       <></>
     </form>
   );
