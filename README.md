@@ -10,7 +10,7 @@
 
 so far it looks like this:
 
-  [deploying link:](https://project-management-ym4t7k4dk-philippeleopoldie.vercel.app)
+  [deploying link](https://project-management-ym4t7k4dk-philippeleopoldie.vercel.app)
 
 here is the components tree:
 
