@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Project } from "./Project";
 import ProjectCard from "./ProjectCard";
 import ProjectForm from "./ProjectForm";
 
 interface ProjectListProps {
   projects: Project[];
-  onSave:(project: Project)=>void;
+  onSave: (project: Project) => void;
 }
 
 function ProjectList({ projects, onSave }: ProjectListProps) {
@@ -18,8 +18,6 @@ function ProjectList({ projects, onSave }: ProjectListProps) {
   const cancelEditing = () => {
     setProjectBeingEdited({});
   };
-
-
 
   const items = projects.map((project) => (
     <div className="cols" key={project.id}>

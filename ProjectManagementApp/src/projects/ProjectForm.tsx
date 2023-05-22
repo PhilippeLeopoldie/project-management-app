@@ -1,17 +1,16 @@
-import React, { SyntheticEvent } from "react";
+import { SyntheticEvent } from "react";
 import { Project } from "./Project";
-import { SyntheticEventData } from "react-dom/test-utils";
 
 interface ProjectfromProps {
   onCancel: () => void;
-  onSave:(project:Project)=>void
+  onSave: (project: Project) => void;
 }
 
-function ProjectForm({ onCancel,onSave }: ProjectfromProps) {
-  const handleSubmit=(event : SyntheticEvent) =>{
+function ProjectForm({ onCancel, onSave }: ProjectfromProps) {
+  const handleSubmit = (event: SyntheticEvent) => {
     event.preventDefault();
-    onSave(new Project({name:'Updated Project'}))
-  }
+    onSave(new Project({ name: "Updated Project" }));
+  };
 
   return (
     <form className="input-group vertical" onSubmit={handleSubmit}>
@@ -28,7 +27,7 @@ function ProjectForm({ onCancel,onSave }: ProjectfromProps) {
       <input type="checkbox" name="isActrive" />
 
       <div className="input-group">
-        <button className="primary bordered medium" >Save</button>
+        <button className="primary bordered medium">Save</button>
         <span></span>
         <button type="button" className="bordered medium" onClick={onCancel}>
           cancel

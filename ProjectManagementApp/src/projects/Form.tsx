@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 function Form() {
   const [departement, setDepartement] = useState<string>("");
   const [message, setMessage] = useState<string>("");
-  const [agreedToTerms, setAgreedToTerms] = useState<boolean>(false);
+  const [agreedToTerms] = useState<boolean>(false);
 
   const [departementError, setDepartementError] = useState<string | null>(null);
   const [messageError, setMessageError] = useState<string | null>(null);
