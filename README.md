@@ -12,7 +12,7 @@ so far it looks like this:
 
   -deploying link:
 
-    project-management-nzguac54t-philippeleopoldie.vercel.app
+    https://project-management-ym4t7k4dk-philippeleopoldie.vercel.app/
 
 this is the workflow (2023-05-12):
 
