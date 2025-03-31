@@ -1,12 +1,11 @@
 # project-management-app
-  this is an front-end project management lab
+This repository serves as a training ground for front-end project management, focusing on conditional rendering in React using TypeScript.
 
 # technology
 - React
 - TypeScript
 
 
-# in developpement...
 
 so far it looks like this:
 
